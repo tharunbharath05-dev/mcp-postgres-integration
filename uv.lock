@@ -311,7 +311,7 @@ cli = [
 [[package]]
 name = "mcp-postgres-integration"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "mcp", extra = ["cli"] },
     { name = "psycopg2-binary" },
