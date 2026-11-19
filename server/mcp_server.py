@@ -2,7 +2,6 @@ import json
 from typing import Annotated
 from pydantic import Field
 from mcp.server.mcpserver import MCPServer
-
 from server.db import fetch_all_employees, fetch_employee_by_id
 from server.logger import get_logger
 
