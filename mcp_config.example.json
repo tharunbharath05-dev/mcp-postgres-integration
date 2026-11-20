@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "postgres-employee-service": {
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "-m",
+        "server.mcp_server"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://neondb_owner:YOUR_ACTUAL_PASSWORD@ep-...-pooler.c-9.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
+        "LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}
